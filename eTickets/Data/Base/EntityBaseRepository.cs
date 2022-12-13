@@ -15,6 +15,7 @@ namespace eTickets.Data.Base
         {
             _context = context;
         }
+
         public async Task AddAsync(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
